@@ -1,5 +1,4 @@
 {
-  "include": ["src", "types"],
   "compilerOptions": {
     "declaration": true,
     "esModuleInterop": true,
@@ -10,7 +9,7 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "rootDir": "./src",
+    "outDir": "dist",
     "target": "es6",
     "sourceMap": true,
     "strict": true,
