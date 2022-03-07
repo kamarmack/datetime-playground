@@ -1,0 +1,55 @@
+{
+  "author": "kamarmack",
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "husky": "^7.0.4",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/datetime-playground.esm.js",
+  "name": "datetime-playground",
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "peerDependencies": {},
+  "scripts": {
+    "analyze": "size-limit --why",
+    "build": "tsdx build",
+    "lint": "tsdx lint",
+    "size": "size-limit",
+    "start": "tsdx watch",
+    "test": "tsdx test",
+    "prepare": "tsdx build"
+  },
+  "size-limit": [
+    {
+      "path": "dist/datetime-playground.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/datetime-playground.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "typings": "dist/index.d.ts",
+  "version": "0.1.0"
+}

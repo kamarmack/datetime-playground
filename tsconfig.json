@@ -1,0 +1,19 @@
+{
+  "include": ["src", "types"],
+  "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "rootDir": "./src",
+    "target": "es6",
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true
+  }
+}
